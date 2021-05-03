@@ -12,7 +12,7 @@ amounts, deadlines = leap.functions.getLockedLpTokens().call()
 
 for (amount, deadline) in zip(amounts, deadlines):
     amount = amount * 1e-18
-    deadline = datetime.datetime.fromtimestamp(deadline)
+    deadline = datetime.datetime.utcfromtimestamp(deadline)
     deadline =  deadline.strftime('%Y-%m-%d %H:%M:%S')
 
-    print("LP Token Amount: {}\t Release Time: {}".format(amount, deadline))
+    print("LP Token Amount: {}\t Release Time: {} UTC".format(amount, deadline))
