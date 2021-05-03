@@ -16,4 +16,7 @@ pip3 install web3
 python leap-lp-lock-viewer.py  
 // OR  
 python3 leap-lp-lock-viewer.py  
-```
+```  
+
+## Don't want to install anything, run it online  
+https://colab.research.google.com/drive/1l-WmgdnxqzWNnYBdUynxe8xvVcdAlBD8?usp=sharing
